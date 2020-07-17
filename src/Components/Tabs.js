@@ -8,6 +8,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
+import Item1 from "./Items/item1";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -93,7 +94,7 @@ export default function TabsWrappedLabel() {
             </Tabs>
 
             <TabPanel value={value} index="one">
-              Item One
+              <Item1 />
             </TabPanel>
             <TabPanel value={value} index="two">
               Item Two
