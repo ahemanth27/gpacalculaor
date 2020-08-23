@@ -37,7 +37,7 @@ const Item1 = () => {
     //As we set this as state, it renders
     setCredits(e.credits);
     let AlphaGrade = e.grade;
-    let NumberGrade = 10;
+    let NumberGrade = 0;
 
     switch (AlphaGrade) {
       case "S":
@@ -64,8 +64,6 @@ const Item1 = () => {
       case "N":
         NumberGrade = 0;
         break;
-      default:
-        setError("Please Enter Valid Grade");
     }
 
     setGrade(NumberGrade);
@@ -142,7 +140,6 @@ const Item1 = () => {
         <span
           style={{ fontSize: "0.45em", color: "#A6A6A6", fontWeight: "400" }}
         >
-          {" "}
           /10
         </span>
       </h1>

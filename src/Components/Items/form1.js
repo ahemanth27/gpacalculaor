@@ -56,7 +56,7 @@ const Form1 = (props) => {
           className={classes.input}
         />
         <TextField
-          inputProps={{ style: { textAlign: "center" } }}
+          inputProps={{ style: { textAlign: "center" }, maxLength: 1 }}
           id="grade"
           label="Grade"
           variant="outlined"

@@ -100,7 +100,7 @@ export default function TabsWrappedLabel() {
             </TabPanel>
             <TabPanel value={value} index="two">
               <p style={{ color: "black" }}>
-                This Feature Under Construction &#129365;
+                This Feature is Under Construction &#129365;
               </p>
             </TabPanel>
             <TabPanel value={value} index="three">
