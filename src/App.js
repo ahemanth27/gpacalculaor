@@ -9,9 +9,9 @@ const App = () => {
   return (
     <div className="App">
       <div id="title">
-        <h1>CGPA Calculator</h1>
+        <h1>GPA Calculator</h1>
         <p>Calculate your sem GPA, overall CGPA, estimated GPA</p>
-        {/* <Container /> */}
+
         <TabPanel />
       </div>
     </div>

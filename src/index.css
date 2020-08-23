@@ -1,13 +1,57 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  background-image: url("./static/background.svg");
+  background-repeat: no-repeat;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Nunito Sans;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/NunitoSans-Regular.eot);
+  src: local("Nunito Sans Regular"), local("NunitoSans-Regular"),
+    url(font/NunitoSans-Regular.eot) format("embedded-opentype"),
+    url(font/NunitoSans-Regular.woff2) format("woff2"),
+    url(font/NunitoSans-Regular.woff) format("woff"),
+    url(font/NunitoSans-Regular.ttf) format("truetype"),
+    url(font/NunitoSans-Regular.svg) format("svg");
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  src: url(font/NunitoSans-SemiBold.eot);
+  src: local("Nunito Sans SemiBold"), local("NunitoSans-SemiBold"),
+    url(font/NunitoSans-SemiBold.eot) format("embedded-opentype"),
+    url(font/NunitoSans-SemiBold.woff2) format("woff2"),
+    url(font/NunitoSans-SemiBold.woff) format("woff"),
+    url(font/NunitoSans-SemiBold.ttf) format("truetype"),
+    url(font/NunitoSans-SemiBold.svg) format("svg");
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 900;
+  /* src: url(font/NunitoSans-Bold.eot); */
+  src: local("Nunito Sans Bold"), local("NunitoSans-Bold"),
+    url(font/NunitoSans-Bold.eot) format("embedded-opentype"),
+    url(font/NunitoSans-Bold.woff2) format("woff2"),
+    url(font/NunitoSans-Bold.woff) format("woff"),
+    url(font/NunitoSans-Bold.ttf) format("truetype"),
+    url(font/NunitoSans-Bold.svg) format("svg");
 }

@@ -46,7 +46,6 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
   },
   outerGrid: {
     margin: "auto",
@@ -54,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(1),
     textAlign: "center",
-    background: "pink",
+    background: "white",
     color: "black",
     padding: 10,
     borderRadius: 10,

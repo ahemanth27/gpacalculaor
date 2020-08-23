@@ -4,6 +4,19 @@ import IconButton from "@material-ui/core/IconButton";
 import AddCircleSharpIcon from "@material-ui/icons/AddCircleSharp";
 import { makeStyles } from "@material-ui/core/styles";
 
+// {
+//   const forceInputUppercase = (e) => {
+//     var start = e.target.selectionStart;
+//     var end = e.target.selectionEnd;
+//     e.target.value = e.target.value.toUpperCase();
+//     e.target.setSelectionRange(start, end);
+//   };
+
+//   document
+//     .getElementById("grade")
+//     .addEventListener("keyup", forceInputUppercase, false);
+// }
+
 const useStyles = makeStyles((theme) => ({
   root: {
     color: "black",
@@ -17,12 +30,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Form1 = (props) => {
+  const [capitalGrade, setCapitalGrade] = useState("");
   const classes = useStyles();
   const handleAdd = () => {
     const credits = document.getElementById("credits").value;
     const grade = document.getElementById("grade").value;
     props.newItem({ credits, grade });
   };
+
+  const toInputUppercase = (e) => {
+    e.target.value = ("" + e.target.value).toUpperCase();
+  };
+
   return (
     <>
       <form noValidate autoComplete="off">
@@ -30,6 +49,7 @@ const Form1 = (props) => {
           inputProps={{ min: 0, style: { textAlign: "center" } }}
           id="credits"
           label="Credits"
+          type="number"
           variant="outlined"
           size="small"
           className={classes.input}
@@ -41,9 +61,11 @@ const Form1 = (props) => {
           variant="outlined"
           size="small"
           className={classes.input}
+          onChange={(e) => setCapitalGrade(e.target.value)}
+          onInput={toInputUppercase}
         />
         <IconButton
-          color="secondary"
+          color="primary"
           aria-label="add an alarm"
           className={classes.button}
           onClick={handleAdd}
