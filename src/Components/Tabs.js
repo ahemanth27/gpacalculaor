@@ -55,8 +55,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     background: "white",
     color: "black",
-    padding: 10,
+    // padding: 10,
+    paddingLeft: "50px",
     borderRadius: 10,
+    width: "560px",
+    marginBottom: "100px",
   },
 }));
 
@@ -96,10 +99,14 @@ export default function TabsWrappedLabel() {
               <Item1 />
             </TabPanel>
             <TabPanel value={value} index="two">
-              Item Two
+              <p style={{ color: "black" }}>
+                This Feature Under Construction &#129365;
+              </p>
             </TabPanel>
             <TabPanel value={value} index="three">
-              Item Three
+              <p style={{ color: "black" }}>
+                This Feature is also Under Construction &#129365;
+              </p>
             </TabPanel>
           </Paper>
         </Grid>

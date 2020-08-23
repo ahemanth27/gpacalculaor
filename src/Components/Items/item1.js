@@ -11,8 +11,16 @@ import CountUp from "react-countup";
 
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  deleteIcon: {
+    color: "#2d79fe",
+  },
+}));
 
 const Item1 = () => {
+  const classes = useStyles();
   const [credits, setCredits] = useState(0);
   const [indx, setindx] = useState("");
   const [grade, setGrade] = useState(0);
@@ -22,6 +30,7 @@ const Item1 = () => {
   const [GPA, setGPA] = useState("");
   const [PrevGPA, setPrevGPA] = useState(0);
   const [update, setUpdate] = useState("");
+  const [error, setError] = useState("");
 
   const handleNewSubject = (e) => {
     //This is for rendering after recivng the props.
@@ -55,6 +64,8 @@ const Item1 = () => {
       case "N":
         NumberGrade = 0;
         break;
+      default:
+        setError("Please Enter Valid Grade");
     }
 
     setGrade(NumberGrade);
@@ -144,7 +155,7 @@ const Item1 = () => {
             </Typography>
 
             <IconButton aria-label="delete" onClick={() => handleDel(index)}>
-              <DeleteIcon fontSize="large" />
+              <DeleteIcon fontSize="large" className={classes.deleteIcon} />
             </IconButton>
           </ListItem>
         ))}

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     width: theme.spacing(50),
     height: theme.spacing(8),
-    backgroundColor: "#8ed0ee",
+    backgroundColor: "#F0F5FF",
     color: "#10286b",
   },
   item: {
@@ -24,7 +24,7 @@ const SubAdded = (props) => {
     <>
       <Grid container>
         <Grid item>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper} elevation={3}>
             <Grid container>
               <Grid item className={classes.item}>
                 Number of Credits: {props.credits}

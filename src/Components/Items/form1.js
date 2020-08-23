@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginTop: -6,
+    color: "#2d85fe",
   },
 }));
 
@@ -65,7 +66,7 @@ const Form1 = (props) => {
           onInput={toInputUppercase}
         />
         <IconButton
-          color="primary"
+          // color="primary"
           aria-label="add an alarm"
           className={classes.button}
           onClick={handleAdd}
