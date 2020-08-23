@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/gpa-calculator/static/css/main.537a6beb.chunk.css",
-    "main.js": "/gpa-calculator/static/js/main.dbc35283.chunk.js",
-    "main.js.map": "/gpa-calculator/static/js/main.dbc35283.chunk.js.map",
+    "main.css": "/gpa-calculator/static/css/main.49801d8e.chunk.css",
+    "main.js": "/gpa-calculator/static/js/main.d3ae6ad2.chunk.js",
+    "main.js.map": "/gpa-calculator/static/js/main.d3ae6ad2.chunk.js.map",
     "runtime-main.js": "/gpa-calculator/static/js/runtime-main.73fd3148.js",
     "runtime-main.js.map": "/gpa-calculator/static/js/runtime-main.73fd3148.js.map",
-    "static/js/2.c2f50172.chunk.js": "/gpa-calculator/static/js/2.c2f50172.chunk.js",
-    "static/js/2.c2f50172.chunk.js.map": "/gpa-calculator/static/js/2.c2f50172.chunk.js.map",
+    "static/js/2.7471de96.chunk.js": "/gpa-calculator/static/js/2.7471de96.chunk.js",
+    "static/js/2.7471de96.chunk.js.map": "/gpa-calculator/static/js/2.7471de96.chunk.js.map",
     "index.html": "/gpa-calculator/index.html",
-    "precache-manifest.e8baff9d3997d5539f076f08be8393e4.js": "/gpa-calculator/precache-manifest.e8baff9d3997d5539f076f08be8393e4.js",
+    "precache-manifest.522b1aa25805558e3d5df097153de463.js": "/gpa-calculator/precache-manifest.522b1aa25805558e3d5df097153de463.js",
     "service-worker.js": "/gpa-calculator/service-worker.js",
-    "static/css/main.537a6beb.chunk.css.map": "/gpa-calculator/static/css/main.537a6beb.chunk.css.map",
-    "static/js/2.c2f50172.chunk.js.LICENSE.txt": "/gpa-calculator/static/js/2.c2f50172.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/gpa-calculator/static/media/background.2d224684.svg"
+    "static/css/main.49801d8e.chunk.css.map": "/gpa-calculator/static/css/main.49801d8e.chunk.css.map",
+    "static/js/2.7471de96.chunk.js.LICENSE.txt": "/gpa-calculator/static/js/2.7471de96.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/gpa-calculator/static/media/NunitoSans-Bold.f35af95e.ttf",
+    "static/media/index.css": "/gpa-calculator/static/media/background.2d224684.svg",
+    "static/media/phone.svg": "/gpa-calculator/static/media/phone.6cfac974.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.73fd3148.js",
-    "static/js/2.c2f50172.chunk.js",
-    "static/css/main.537a6beb.chunk.css",
-    "static/js/main.dbc35283.chunk.js"
+    "static/js/2.7471de96.chunk.js",
+    "static/css/main.49801d8e.chunk.css",
+    "static/js/main.d3ae6ad2.chunk.js"
   ]
 }
