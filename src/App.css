@@ -16,3 +16,42 @@
 .App {
   margin-top: 5%;
 }
+
+.phone {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .App {
+    display: none;
+  }
+  .phone {
+    display: block;
+    color: black;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-weight: bolder;
+  }
+  .phone p {
+    margin-top: 40%;
+    font-family: Nunito Sans;
+  }
+  .phoneIcon {
+    position: absolute;
+    margin-top: 10%;
+    transform: rotate(-90deg) translate(-50%, -50%);
+  }
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 900;
+  /* src: url(font/NunitoSans-Bold.eot); */
+  src: local("Nunito Sans Bold"), local("NunitoSans-Bold"),
+    url(font/NunitoSans-Bold.eot) format("embedded-opentype"),
+    url(font/NunitoSans-Bold.woff2) format("woff2"),
+    url(font/NunitoSans-Bold.woff) format("woff"),
+    url(font/NunitoSans-Bold.ttf) format("truetype"),
+    url(font/NunitoSans-Bold.svg) format("svg");
+}

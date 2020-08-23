@@ -55,3 +55,9 @@ code {
     url(font/NunitoSans-Bold.ttf) format("truetype"),
     url(font/NunitoSans-Bold.svg) format("svg");
 }
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-image: none;
+  }
+}
