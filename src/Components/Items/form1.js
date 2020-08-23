@@ -4,19 +4,6 @@ import IconButton from "@material-ui/core/IconButton";
 import AddCircleSharpIcon from "@material-ui/icons/AddCircleSharp";
 import { makeStyles } from "@material-ui/core/styles";
 
-// {
-//   const forceInputUppercase = (e) => {
-//     var start = e.target.selectionStart;
-//     var end = e.target.selectionEnd;
-//     e.target.value = e.target.value.toUpperCase();
-//     e.target.setSelectionRange(start, end);
-//   };
-
-//   document
-//     .getElementById("grade")
-//     .addEventListener("keyup", forceInputUppercase, false);
-// }
-
 const useStyles = makeStyles((theme) => ({
   root: {
     color: "black",

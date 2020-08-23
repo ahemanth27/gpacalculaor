@@ -31,6 +31,7 @@ const Item1 = () => {
   const [PrevGPA, setPrevGPA] = useState(0);
   const [update, setUpdate] = useState("");
   const [error, setError] = useState("");
+  const [Empty, setEmpty] = useState(false);
 
   const handleNewSubject = (e) => {
     //This is for rendering after recivng the props.
@@ -77,6 +78,7 @@ const Item1 = () => {
     subjects.push(dict);
 
     handleCalculate(subjects);
+    setEmpty(false);
   };
 
   const handleDel = (id) => {
@@ -84,7 +86,12 @@ const Item1 = () => {
     updatedSubjects.splice(id, 1);
 
     setSubjects(updatedSubjects);
-    handleCalculate(updatedSubjects);
+    console.log(updatedSubjects);
+    if (updatedSubjects.length > 0) {
+      handleCalculate(updatedSubjects);
+    } else {
+      setEmpty(true);
+    }
   };
 
   const handleCalculate = (subjects) => {
@@ -110,6 +117,8 @@ const Item1 = () => {
   const getCGPA = () => {
     if (isNaN(GPA)) {
       return "";
+    } else if (Empty) {
+      return 0;
     } else {
       return GPA;
     }
@@ -126,8 +135,6 @@ const Item1 = () => {
         separator=" "
         decimals={2}
         decimal="."
-
-        // suffix=" left"
       />
     );
   };
