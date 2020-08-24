@@ -33,8 +33,12 @@ const App = () => {
         </div>
       </div>
       <div className="phone">
-        <p>This website is not currently compatible with mobile</p>
         <img src={icon} className="phoneIcon" />
+        <p>
+          Oops! This website is not currently compatible with mobile &#128556;
+          <br />
+          Please open it in your desktop :)
+        </p>
       </div>
     </>
   );
