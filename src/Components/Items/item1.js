@@ -131,7 +131,7 @@ const Item1 = () => {
       <CountUp
         start={startValue}
         end={endValue}
-        duration={2.75}
+        duration={1.75}
         separator=" "
         decimals={2}
         decimal="."

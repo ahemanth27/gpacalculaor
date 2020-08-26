@@ -10,6 +10,10 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Item1 from "./Items/item1";
 
+import Item2 from "./Items/item2";
+
+import Item3 from "./Items/item3";
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -58,7 +62,8 @@ const useStyles = makeStyles((theme) => ({
     // padding: 10,
     paddingLeft: "50px",
     borderRadius: 10,
-    width: "560px",
+    maxWidth: "560px",
+
     marginBottom: "100px",
   },
 }));
@@ -96,17 +101,13 @@ export default function TabsWrappedLabel() {
             </Tabs>
 
             <TabPanel value={value} index="one">
-              <Item1 />
+              <Item3 />
             </TabPanel>
             <TabPanel value={value} index="two">
-              <p style={{ color: "black" }}>
-                This Feature is Under Construction &#129365;
-              </p>
+              <Item2 />
             </TabPanel>
             <TabPanel value={value} index="three">
-              <p style={{ color: "black" }}>
-                This Feature is also Under Construction &#129365;
-              </p>
+              <Item1 />
             </TabPanel>
           </Paper>
         </Grid>
