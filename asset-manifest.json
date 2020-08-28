@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/gpa-calculator/static/css/main.c27a3836.chunk.css",
-    "main.js": "/gpa-calculator/static/js/main.3bc0e080.chunk.js",
-    "main.js.map": "/gpa-calculator/static/js/main.3bc0e080.chunk.js.map",
+    "main.css": "/gpa-calculator/static/css/main.4f8e2603.chunk.css",
+    "main.js": "/gpa-calculator/static/js/main.912e680c.chunk.js",
+    "main.js.map": "/gpa-calculator/static/js/main.912e680c.chunk.js.map",
     "runtime-main.js": "/gpa-calculator/static/js/runtime-main.73fd3148.js",
     "runtime-main.js.map": "/gpa-calculator/static/js/runtime-main.73fd3148.js.map",
-    "static/js/2.7471de96.chunk.js": "/gpa-calculator/static/js/2.7471de96.chunk.js",
-    "static/js/2.7471de96.chunk.js.map": "/gpa-calculator/static/js/2.7471de96.chunk.js.map",
+    "static/js/2.998dc8ff.chunk.js": "/gpa-calculator/static/js/2.998dc8ff.chunk.js",
+    "static/js/2.998dc8ff.chunk.js.map": "/gpa-calculator/static/js/2.998dc8ff.chunk.js.map",
     "index.html": "/gpa-calculator/index.html",
-    "precache-manifest.8c6387b6a9276fd3bf6aeca85857e39e.js": "/gpa-calculator/precache-manifest.8c6387b6a9276fd3bf6aeca85857e39e.js",
+    "precache-manifest.e870bf9ccb040dd7495bfcb0b4314f99.js": "/gpa-calculator/precache-manifest.e870bf9ccb040dd7495bfcb0b4314f99.js",
     "service-worker.js": "/gpa-calculator/service-worker.js",
-    "static/css/main.c27a3836.chunk.css.map": "/gpa-calculator/static/css/main.c27a3836.chunk.css.map",
-    "static/js/2.7471de96.chunk.js.LICENSE.txt": "/gpa-calculator/static/js/2.7471de96.chunk.js.LICENSE.txt",
+    "static/css/main.4f8e2603.chunk.css.map": "/gpa-calculator/static/css/main.4f8e2603.chunk.css.map",
+    "static/js/2.998dc8ff.chunk.js.LICENSE.txt": "/gpa-calculator/static/js/2.998dc8ff.chunk.js.LICENSE.txt",
     "static/media/App.css": "/gpa-calculator/static/media/NunitoSans-Bold.f35af95e.ttf",
     "static/media/index.css": "/gpa-calculator/static/media/background.2d224684.svg",
     "static/media/phone.svg": "/gpa-calculator/static/media/phone.6cfac974.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.73fd3148.js",
-    "static/js/2.7471de96.chunk.js",
-    "static/css/main.c27a3836.chunk.css",
-    "static/js/main.3bc0e080.chunk.js"
+    "static/js/2.998dc8ff.chunk.js",
+    "static/css/main.4f8e2603.chunk.css",
+    "static/js/main.912e680c.chunk.js"
   ]
 }
