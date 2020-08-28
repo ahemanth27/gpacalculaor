@@ -31,11 +31,14 @@ const Textbox3 = (props) => {
   const [indx, setIndx] = useState(props.indx);
 
   const handleSendDetails = (values) => {
+    
     props.sendValues(values);
+    
   };
 
   useEffect(() => {
-    if (credits & GPA) {
+
+    if (credits && GPA) {
       handleSendDetails({ credits: credits, GPA: GPA, indx: indx });
     }
   }, [credits, GPA]);

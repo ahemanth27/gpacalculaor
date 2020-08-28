@@ -44,7 +44,8 @@ const Form3 = (props) => {
 
   const [semNumber, setSemNumber] = useState(1);
 
-  const [sentArray, setSentArray] = useState([]);
+  const [sentGPAs, setSentGPAs] = useState([0]);
+  const [sentCredits, setSentCredits] = useState([0]);
 
   const [denominator, setDenominator] = useState(1);
 
@@ -79,25 +80,30 @@ const Form3 = (props) => {
   };
 
   const handleSendValues = (values) => {
-    let sentCredits = parseInt(values.credits);
-    let sentGPA = parseInt(values.GPA);
-    let sentIndx = parseInt(values.indx) - 1;
-    let score = sentCredits * sentGPA;
+    let currentGPA = parseFloat(values.GPA);
+    let currentCredits = parseInt(values.credits);
+    let currentindx = parseInt(values.indx-1);
 
-    let newArray = [...sentArray];
-    newArray[sentIndx] = score;
+    let creditsArray = [...sentCredits];
+    let GPAarray = [...sentGPAs];   
+    
+    GPAarray[currentindx] = currentGPA;    
+    creditsArray[currentindx] = currentCredits;
 
-    setSentArray(newArray);
+    setSentCredits(creditsArray);
+    setSentGPAs(GPAarray);
   };
 
   const calcMarks = () => {
+
     let score = 0;
-    for (let i = 0; i < sentArray.length; i++) {
-      console.log(sentArray[i]);
-      score = score + sentArray[i];
+    let denom = 0;
+    for (let i = 0; i < sentCredits.length; i++) {
+      score = score + sentCredits[i] * sentGPAs[i];
+      denom = denom + sentCredits[i]
     }
 
-    score = score / sentArray.length;
+    score = score / denom;
 
     props.getMarks(score);
   };
