@@ -13,7 +13,7 @@ const App = () => {
         <div id="title">
           <h1>GPA Calculator</h1>
           <p>
-            Calculate your Semester GPA, Cumulative CGPA and Estimated Grade for
+            Calculate your Semester GPA, Cumulative CGPA and Estimated Total for
             a subject
           </p>
 

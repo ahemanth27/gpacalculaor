@@ -41,15 +41,24 @@ const Form2 = (props) => {
     let fat = parseFloat(document.getElementById("fat").value);
 
     let projectMarks = parseFloat(document.getElementById("project").value);
+    console.log(projectMarks)
     let labMarks = parseFloat(document.getElementById("lab").value);
+    console.log(labMarks)
 
     let marks = cat1 * 0.3 + cat2 * 0.3 + fat * 0.4 + da;
 
-    if (project & !lab) {
+    if (project && !lab) {
+      
       marks = projectMarks * (1 / 3) + marks * (2 / 3);
-    } else if (lab & !project) {
-      marks = projectMarks * (1 / 3) + marks * (2 / 3);
-    } else if (lab & project) {
+    } else if (lab && !project) {
+
+      
+      marks = labMarks * (1 / 3) + marks * (2 / 3);
+      
+      console.log(marks)
+    } else if (lab && project) {
+
+      
       marks = projectMarks * (1 / 4) + marks * (2 / 4) + lab * (1 / 4);
     }
 

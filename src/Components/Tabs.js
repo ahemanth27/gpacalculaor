@@ -89,10 +89,10 @@ export default function TabsWrappedLabel() {
               <Tab
                 value="one"
                 label="Semester GPA"
-                wrapped
                 {...a11yProps("one")}
               />
-              <Tab value="two" label="Subject Grade " {...a11yProps("two")} />
+              
+              <Tab value="two" label="Subject Total " {...a11yProps("two")} />
               <Tab
                 value="three"
                 label="CGPA Estimator"
@@ -101,13 +101,14 @@ export default function TabsWrappedLabel() {
             </Tabs>
 
             <TabPanel value={value} index="one">
-              <Item3 />
+            <Item1 />
             </TabPanel>
             <TabPanel value={value} index="two">
               <Item2 />
             </TabPanel>
             <TabPanel value={value} index="three">
-              <Item1 />
+              <Item3 />
+              
             </TabPanel>
           </Paper>
         </Grid>
